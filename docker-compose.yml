@@ -1,16 +1,5 @@
-  # odoo:
-  #   image: igpro.ddns.net/odoo:v8.1
-  #   container_name: odoo
-  #   ports:
-  #     - 8069:8069
-  #   links:
-  #     - db:db
-  #   volumes:
-  #     - ./extra-addons:/mnt/extra-addons
-  #     # - ./entrypoint.sh:/entrypoint.sh
-  #   # command: -- -u l10n_dz_hr_payroll y-d test
   db:
-    image: igprohome.ddns.net:8443/postgres:9.6
+    image: postgres:9.6
     container_name: database
     environment:
       POSTGRES_USER: isi
